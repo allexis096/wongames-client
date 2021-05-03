@@ -1,10 +1,10 @@
-import * as S from './styles'
+import * as S from './styles';
 
 export type LogoProps = {
-  color?: 'white' | 'black'
-  size?: 'normal' | 'large'
-  hideOnMobile?: boolean
-}
+  color?: 'white' | 'black';
+  size?: 'normal' | 'large';
+  hideOnMobile?: boolean;
+};
 
 const Logo = ({
   color = 'white',
@@ -86,6 +86,6 @@ const Logo = ({
       </defs>
     </svg>
   </S.Wrapper>
-)
+);
 
-export default Logo
+export default Logo;
