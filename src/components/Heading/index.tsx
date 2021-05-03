@@ -1,8 +1,20 @@
 import * as S from './styles';
 
-const Heading = () => (
-  <S.Wrapper>
-    <h1>Heading</h1>
+export type HeadingProps = {
+  children: React.ReactNode;
+  color?: 'white' | 'black';
+  lineleft?: boolean;
+  lineBottom?: boolean;
+};
+
+const Heading = ({
+  children,
+  color = 'white',
+  lineleft = false,
+  lineBottom = false,
+}: HeadingProps) => (
+  <S.Wrapper color={color} lineleft={lineleft} lineBottom={lineBottom}>
+    {children}
   </S.Wrapper>
 );
 
