@@ -11,6 +11,14 @@ export default {
     buttonLabel: 'Buy now',
     buttonLink: 'rdr2',
   },
+  argTypes: {
+    alignment: {
+      control: {
+        type: 'radio',
+        options: ['right', 'left'],
+      },
+    },
+  },
 } as Meta;
 
 export const Default: Story<HighlightProps> = (args) => (
