@@ -50,6 +50,14 @@ describe('<Heading />', () => {
     );
   });
 
+  it('should render a heading with a small size', () => {
+    renderWithTheme(<Heading size="huge">Won Games</Heading>);
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '5.2rem',
+    });
+  });
+
   it('should render a heading with a secondary line color', () => {
     renderWithTheme(
       <Heading lineColor="secondary" lineleft lineBottom>
