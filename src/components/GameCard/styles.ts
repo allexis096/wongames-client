@@ -43,6 +43,8 @@ export const ImageBox = styled.div`
   `};
 `;
 
+export const Image = styled.img``;
+
 export const Content = styled.div`
   ${({ theme }) => css`
     display: flex;
