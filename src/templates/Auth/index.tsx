@@ -14,7 +14,7 @@ const Auth = ({ title, children }: AuthProps) => (
 
       <Heading>All your favorite games in one place</Heading>
       <S.Subtitle>
-        <strong>WON</strong> is the best and most complete gaming platform
+        <strong>WON</strong> is the best and most complete gaming platform.
       </S.Subtitle>
 
       <S.Footer>Won Games 2021 © Todos os Direitos Reservados</S.Footer>
