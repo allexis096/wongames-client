@@ -11,5 +11,5 @@ describe('<FormSignIn />', () => {
     ).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
-  })
-})
+  });
+});
