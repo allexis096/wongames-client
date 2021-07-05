@@ -1,14 +1,17 @@
+import Link from 'next/link';
+import { useState } from 'react';
 import { Menu2 as MenuIcon } from '@styled-icons/remix-line';
 import {
   Search as SearchIcon,
   ShoppingCart as ShoppingCartIcon,
   Close as CloseIcon,
 } from '@styled-icons/material-outlined';
+
 import Logo from 'components/Logo';
-import * as S from './styles';
-import { useState } from 'react';
 import Button from 'components/Button';
 import MediaMatch from 'components/MediaMatch';
+
+import * as S from './styles';
 
 export type MenuProps = {
   username?: string;
@@ -47,7 +50,9 @@ const Menu = ({ username }: MenuProps) => {
 
         {!username && (
           <MediaMatch greaterThan="medium">
-            <Button>Sign In</Button>
+            <Link href="/sign-in" passHref>
+              <Button as="a">Sign In</Button>
+            </Link>
           </MediaMatch>
         )}
       </S.MenuGroup>
@@ -67,13 +72,15 @@ const Menu = ({ username }: MenuProps) => {
         </S.MenuNav>
         {!username && (
           <S.RegisterBox>
-            <Button fullWidth size="large">
-              Log in now
-            </Button>
+            <Link href="/sign-in" passHref>
+              <Button fullWidth size="large" as="a">
+                Sign in
+              </Button>
+            </Link>
             <span>or</span>
-            <S.CreateAccount href="#" title="Sign Up">
-              Sign Up
-            </S.CreateAccount>
+            <Link href="/sign-up" passHref>
+              <S.CreateAccount title="Sign Up">Sign Up</S.CreateAccount>
+            </Link>
           </S.RegisterBox>
         )}
       </S.MenuFull>
