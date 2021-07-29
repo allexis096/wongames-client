@@ -7,7 +7,7 @@ import Heading from 'components/Heading';
 import Ribbon from 'components/Ribbon';
 import * as S from './styles';
 
-type GameInfoProps = {
+export type GameInfoProps = {
   title: string;
   description: string;
   price: string;
