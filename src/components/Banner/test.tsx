@@ -6,7 +6,7 @@ import Banner from '.';
 const props = {
   img: 'https://source.unsplash.com/user/willianjusten/1042x580',
   title: 'Defy death',
-  subtitle: '<p>Play the new <strong>Crashlands</strong> season',
+  subtitle: '<p>Play the new <strong>Crashlands</strong> season</p>',
   buttonLabel: 'Buy now',
   buttonLink: '/games/defy-death',
 };
