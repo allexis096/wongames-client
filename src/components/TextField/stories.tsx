@@ -15,7 +15,9 @@ export default {
   },
   argTypes: {
     onInput: { action: 'changed' },
-    icon: { type: '' },
+    icon: {
+      type: 'function',
+    },
     iconPosition: {
       control: {
         type: 'radio',
